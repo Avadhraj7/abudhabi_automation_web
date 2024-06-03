@@ -1,0 +1,18 @@
+{
+  "cred": {
+    "firstName": "Avadhraj",
+    "lastName": "Parmar",
+    "email": "avadhraj+007@alike.io",
+    "phoneNumber": "9033889798",
+    "couponCode": "100PFREE"
+
+  },
+  "screenshot": {
+    "screenshotOnRunFailure": true,
+    "screenshotOnFailure": true,
+    "defaultCommandTimeout": 10000,
+    "env": {
+      "screenshotFolder": "cypress/screenshots"
+    }
+  }
+}
