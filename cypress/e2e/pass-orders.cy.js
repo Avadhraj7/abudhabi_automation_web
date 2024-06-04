@@ -9,10 +9,9 @@ describe('Abu Dhabi all passes order Test Scenarios', () => {
 
   it.only('Nano Pass', () => {
 
-
     //Select Nano pass ticket 
     // Step 1: Scroll the element into view and wait for it to be visible and fully opaque
-    cy.xpath(nanoPass.nanoPassSelect)
+    cy.xpath(nanoPass.nanoPassSelect, {timeout: 10000})
       .scrollIntoView()
       .should('be.visible')
       .should(($el) => {
@@ -101,7 +100,7 @@ describe('Abu Dhabi all passes order Test Scenarios', () => {
         });
     });
 
-
+    cy.title({ timeout: 60000 }).should('include', accountDetails.successPageTitle);
   })
 
   it('Build your Own Passe', () => {
